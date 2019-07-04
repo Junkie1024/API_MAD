@@ -7,11 +7,13 @@ public class Asycdata extends AsyncTask<String,Void,String> {
 
     @Override
     protected void onPreExecute() {
+
         super.onPreExecute();
     }
 
     @Override
     protected void onPostExecute(String s) {
+
         super.onPostExecute(s);
     }
 

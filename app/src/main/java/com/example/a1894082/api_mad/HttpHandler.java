@@ -21,13 +21,13 @@ public class HttpHandler {
 
         try {
             URL url = new URL(rurl);
-            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();//connecting and casting
             con.setRequestMethod("GET");
             con.setRequestProperty("Content-Type", "application/json");
 
 
             //Read response
-            InputStream in = new BufferedInputStream(con.getInputStream());
+            InputStream in = new BufferedInputStream(con.getInputStream());// storing inputstream in the buffer
 
             response = convertStream(in);
 
@@ -36,9 +36,6 @@ public class HttpHandler {
         } catch (IOException e) {
             Log.e("HttpHandler Class", "IOException : " + e.getMessage());
         }
-
-
-
 
         return response;
     }
