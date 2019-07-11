@@ -49,7 +49,6 @@ public class HttpHandler {
         try {
             while ((line = reader.readLine()) != null) {
                 sb.append(line).append("\n");
-
             }
 
         } catch (IOException e) {

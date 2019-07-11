@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
             System.out.println("This is from MainActivity:"+mysts);
 
-
             JSONObject mainobj =  new JSONObject(mysts);
 
             JSONArray proarray = mainobj.getJSONArray("products");
